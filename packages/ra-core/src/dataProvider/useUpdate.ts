@@ -389,8 +389,7 @@ export const useUpdate = <RecordType extends RaRecord = any>(
             });
         }
     };
-
-    return [update, mutation, paramsRef.current.previousData];
+    return [update, mutation, params.previousData];
 };
 
 type Snapshot = [key: QueryKey, value: any][];
